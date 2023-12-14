@@ -94,7 +94,11 @@ const textRef = ref<HTMLPreElement | null>(null);
 
   <button>Copy</button>
 
-  <pre ref="textRef">
+  <textarea cols="100" rows="3">
+Overnight Strategy backtest - week {{ formData.weekNum }}, 2023
+  </textarea>
+
+  <textarea ref="textRef" cols="100" rows="60">
 **NEW**: daily report website in progress: [link](https://www.crunchmystock.com/)
 
 .
@@ -153,6 +157,5 @@ _______________________________________________________
 Ideas and requests for analytics and backtesting -> comment, PM, or post in sticky thread:
 
 - https://www.reddit.com/r/CrunchMyStock/comments/lxm7qy/backtesting_requests_and_ideas/
-    </pre
-  >
+  </textarea>
 </template>
